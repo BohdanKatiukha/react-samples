@@ -81,13 +81,14 @@ class ToDo extends Component{
         newToDoList = newToDoList.filter((el)=>el.id !== item.id)
         this.setState({toDoList: newToDoList}, this._updateLocalStorage)
     }
-
+    
     render(){
         const toDoList = this.state.toDoList.map((item) =>{
             return(
                 <div className = 'to-do-item' key={item.id}>
                     <ToDoItem handleDelete = {this.handleDelete} handleComplete= {this.handleComplete}  item = {item}/>
                 </div>
+                
             )
         } )
            

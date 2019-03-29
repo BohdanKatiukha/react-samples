@@ -18,9 +18,9 @@ export default class ToDoItem extends Component{
     }
 
     handleDelete = () => {
-        this.props.handleDelete(this.props.item)
-    }
-    
+            this.props.handleDelete(this.props.item)
+        }
+        
     render(){
         return(
             <div>
